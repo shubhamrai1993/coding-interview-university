@@ -8,6 +8,8 @@ public class MyMergeSort {
     mergeSort(arr, 0, arr.length - 1);
   }
 
+  // Sort first and then merge. Merge sort function calls itself recursively to sort and merges the two sorted halves returned to it
+
   void mergeSort(int[] arr, int start, int end) {
     if (start == end) {
       return;
